@@ -1,0 +1,1 @@
+export { default as UpperTextBlock} from "./UpperTextBlock.astro"

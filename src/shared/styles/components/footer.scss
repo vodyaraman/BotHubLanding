@@ -1,0 +1,26 @@
+footer {
+    background-color: #15172b;
+    padding: 20px 0;
+    text-align: center;
+
+    .footer-info,
+    .footer-links,
+    .social-links {
+        margin-bottom: 20px;
+    }
+
+    .footer-links ul,
+    .social-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+
+        li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}
