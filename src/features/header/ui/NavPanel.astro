@@ -1,0 +1,30 @@
+---
+import {
+  ProductsLink,
+  TariffsLink,
+  APILink,
+  BlogLink,
+  AuthButton,
+} from "/entities/header/ui";
+---
+
+<nav>
+  <ul>
+    <li>
+      <ProductsLink />
+    </li>
+    <li>
+      <TariffsLink />
+    </li>
+    <li>
+      <APILink />
+    </li>
+    <li>
+      <BlogLink />
+    </li>
+  </ul>
+  <div class="language-auth">
+    <button class="change-language">RU</button>
+    <AuthButton />
+  </div>
+</nav>

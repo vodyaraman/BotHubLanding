@@ -12,11 +12,11 @@ const MainInfo: React.FC<MainInfoProps> = ({
   children
 }) => {
   return (
-    <div className="intro-text-center">
+    <>
       <h1 className="intro-title">{title}</h1>
       <p className="intro-description">{description}</p>
       {children}
-    </div>
+    </>
   );
 };
 

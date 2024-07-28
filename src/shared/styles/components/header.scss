@@ -1,21 +1,29 @@
 header {
     display: flex;
-    position: fixed;
+    position: sticky;
 
     top: 0;
     left: 0;
     right: 0;
 
-    background-color: #15172b;
-    padding: 0 16%;
+    background-color: rgba(18, 24, 37, 0.4);
+    padding: 0 16vw;
     height: 9vh;
-    width: 100%;
+    min-height: 75px;
+    flex: 1;
+
+    z-index: 4;
+
+    backdrop-filter: blur(4px);
+
+    border-bottom: 1px solid rgb(34, 43, 68);
 
     .container {
         display: flex;
         position: relative;
         align-items: center;
         flex: 1;
+
         nav {
             display: flex;
             position: inherit;
@@ -39,6 +47,11 @@ header {
                         display: flex;
                         color: #ffffff;
                         text-decoration: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: #4251db;
+                        }
                     }
                 }
             }
@@ -49,8 +62,8 @@ header {
         display: flex;
         align-items: flex-end;
 
-        button {
-            background-color: #1e2139;
+        .change-language {
+            background-color: transparent;
             color: #ffffff;
             border: none;
             padding: 10px 20px;
