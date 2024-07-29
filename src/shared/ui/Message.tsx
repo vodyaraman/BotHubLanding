@@ -6,6 +6,7 @@ interface MessageProps {
 }
 
 const Message: React.FC<MessageProps> = ({ text, messageType }) => {
+  console.log(messageType);
   return (
     <div className={`message message-${messageType}`}>
       {text}

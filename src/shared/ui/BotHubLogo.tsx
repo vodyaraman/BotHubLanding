@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const BotHubLogo: React.FC = () => {
+const BotHubLogo: React.FC = () => {
     return (
         <svg
             width="97"
@@ -19,3 +19,5 @@ export const BotHubLogo: React.FC = () => {
         </svg>
     );
 };
+
+export default BotHubLogo;

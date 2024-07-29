@@ -1,5 +1,6 @@
-import React from 'react';
-import { Message } from '/shared/ui';
+import React from "react";
+import { Message } from "/shared/ui";
+import UserIcon from "/shared/ui/UserIcon";
 
 interface UserMessageProps {
   text: string;
@@ -7,9 +8,11 @@ interface UserMessageProps {
 
 const UserMessage: React.FC<UserMessageProps> = ({ text }) => {
   return (
-    <Message text={text} messageType="user" />
+    <>
+      <UserIcon />
+      <Message text={text} messageType="user" />
+    </>
   );
 };
 
 export default UserMessage;
-

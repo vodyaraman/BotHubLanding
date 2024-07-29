@@ -1,5 +1,5 @@
 import React from 'react';
-import { Message } from '/shared/ui';
+import { AssistantIcon, Message } from '/shared/ui';
 
 interface BotMessageProps {
   text: string;
@@ -7,7 +7,10 @@ interface BotMessageProps {
 
 const BotMessage: React.FC<BotMessageProps> = ({ text }) => {
   return (
-    <Message text={text} messageType="assistant" />
+    <>
+      <AssistantIcon/>
+      <Message text={text} messageType="assistant" />
+    </>
   );
 };
 

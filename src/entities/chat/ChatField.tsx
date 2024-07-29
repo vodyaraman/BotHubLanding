@@ -6,7 +6,7 @@ interface ChatProps {
 
 const Chat: React.FC<ChatProps> = ({ children }) => {
   return (
-    <div className="chat">
+    <div className="message-container">
       {children}
     </div>
   );
