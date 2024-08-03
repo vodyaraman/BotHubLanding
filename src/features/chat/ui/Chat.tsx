@@ -40,6 +40,7 @@ const Chat: React.FC = () => {
   return (
     <div className="chat-container">
       <div className="chat">
+        <div className="glittering-shimmering-ridiculos-hullabaloo" />
         <ChatHeader />
         <ChatField>
           {messages.map((message, index) =>

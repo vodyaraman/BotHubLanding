@@ -7,10 +7,11 @@ interface BotMessageProps {
 
 const BotMessage: React.FC<BotMessageProps> = ({ text }) => {
   return (
-    <>
+    <div className="message-entity assistant">
+      <div className="bot-name">Gemini</div>
       <AssistantIcon/>
       <Message text={text} messageType="assistant" />
-    </>
+    </div>
   );
 };
 

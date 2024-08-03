@@ -8,10 +8,10 @@ interface UserMessageProps {
 
 const UserMessage: React.FC<UserMessageProps> = ({ text }) => {
   return (
-    <>
-      <UserIcon />
+    <div className="message-entity user">
       <Message text={text} messageType="user" />
-    </>
+      <UserIcon />
+    </div>
   );
 };
 

@@ -1,3 +1,20 @@
-h1 {
-    margin: 0;
+@keyframes switch-color-animation {
+    0% {
+        background-position: 100% 100%; /* Правый нижний угол */
+    }
+    25% {
+        background-position: 0% 100%; /* Левый нижний угол */
+    }
+    50% {
+        background-position: 0% 0%; /* Левый верхний угол */
+    }
+    75% {
+        background-position: 100% 0%; /* Правый верхний угол */
+    }
+    100% {
+        background-position: 100% 100%; /* Правый нижний угол */
+    }
 }
+
+  
+  
