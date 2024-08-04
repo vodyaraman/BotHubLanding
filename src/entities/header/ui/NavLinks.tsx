@@ -1,26 +1,41 @@
 import React from 'react';
-import { NavButton } from '/shared/ui';
+import { ArrowIcon, NavButton } from '/shared/ui';
 
 const ProductsLink: React.FC<{ onClick?: () => void }> = ({ onClick }) => {
   return (
-      <div className="invisible-button" onClick={onClick}>
-          <NavButton text="Продукты" />
-      </div>
+    <div className="invisible-button" onClick={onClick}>
+      <NavButton text="Продукты"/>
+      <div className='gap'/>
+      <ArrowIcon direction="down" />
+    </div>
   );
 };
 
 const TariffsLink: React.FC = () => {
-  return <NavButton text="Тарифы" />;
+  return (
+    <div className="invisible-button">
+      <NavButton text="Тарифы" />
+    </div>
+  );
 };
 
 const APILink: React.FC = () => {
-  return <NavButton text="API" />;
+  return (
+    <div className="invisible-button">
+      <NavButton text="API" />
+    </div>
+  );
 };
 
 const BlogLink: React.FC = () => {
-  return <NavButton text="Блог" />;
+  return (
+    <div className="invisible-button">
+      <NavButton text="Блог" />
+    </div>
+  );
 };
 
 // Экспортируем все компоненты вместе
 export { ProductsLink, TariffsLink, APILink, BlogLink };
+
 

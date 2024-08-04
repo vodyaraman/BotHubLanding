@@ -7,9 +7,8 @@ header {
     right: 0;
 
     background-color: rgba(18, 24, 37, 0.4);
-    padding: 0 16vw;
+    padding: 0 18vw;
     height: 9vh;
-    min-height: 75px;
     flex: 1;
 
     z-index: 4;
@@ -17,7 +16,8 @@ header {
     backdrop-filter: blur(4px);
 
     border-bottom: 1px solid rgb(34, 43, 68);
-
+    
+    font-size: 0.7rem;
     .container {
         display: flex;
         position: relative;
@@ -41,34 +41,27 @@ header {
                 float: left;
 
                 li {
-                    margin: 0 10px;
-
-                    a {
-                        display: flex;
-                        color: #ffffff;
-                        text-decoration: none;
-                        cursor: pointer;
-
-                        &:hover {
-                            color: #4251db;
-                        }
-                    }
+                    margin: auto 10px;
                 }
             }
         }
     }
 
     .language-auth {
+        height: 100%;
         display: flex;
-        align-items: flex-end;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
 
         .change-language {
             background-color: transparent;
             color: #ffffff;
             border: none;
-            padding: 10px 20px;
             margin-left: 10px;
+            font-size: inherit;
             cursor: pointer;
+            margin-right: 20px;
         }
     }
 }

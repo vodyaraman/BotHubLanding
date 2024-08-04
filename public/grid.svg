@@ -1,7 +1,4 @@
-import React from 'react';
-
-const MySvgComponent: React.FC = () => (
-  <svg
+<svg
     className='grid-overlay'
     viewBox="0 0 1919 902"
     fill="none"
@@ -842,6 +839,3 @@ const MySvgComponent: React.FC = () => (
       </linearGradient>
     </defs>
   </svg>
-);
-
-export default MySvgComponent;

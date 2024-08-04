@@ -3,8 +3,8 @@ import React from 'react';
 const BotHubLogo: React.FC = () => {
     return (
         <svg
-            width="97"
-            height="30"
+            width="65"
+            height="55"
             viewBox="0 0 97 30"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"

@@ -1,11 +1,10 @@
 ---
 import { UpperTextBlock } from "/features/info/ui"
 import { Chat } from "/features/chat/ui"
-import { Grid } from "/shared/ui";
 ---
 
-<div class="upper-info-block">
-    <Grid/>
+<section class="upper-info-block">
+    <div class="grid-overlay"/>
     <UpperTextBlock/>
     <Chat client:load/>
-</div>
+</section>

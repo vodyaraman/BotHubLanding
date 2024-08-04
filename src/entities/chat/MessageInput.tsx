@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { SendButton } from '/shared/ui';
 
 interface MessageInputProps {
   onSend: (message: string) => void;
@@ -30,7 +31,7 @@ const MessageInput: React.FC<MessageInputProps> = ({ onSend }) => {
         }}
       />
       <button className="chat-send-button" onClick={handleSendClick}>
-        ➡️
+        <SendButton/>
       </button>
     </div>
   );

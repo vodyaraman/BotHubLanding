@@ -1,20 +1,13 @@
 @keyframes switch-color-animation {
     0% {
-        background-position: 100% 100%; /* Правый нижний угол */
-    }
-    25% {
-        background-position: 0% 100%; /* Левый нижний угол */
+        background-position: -100% -100%; /* Правый нижний угол */
     }
     50% {
-        background-position: 0% 0%; /* Левый верхний угол */
-    }
-    75% {
-        background-position: 100% 0%; /* Правый верхний угол */
+        background-position: 0% 0%;
     }
     100% {
-        background-position: 100% 100%; /* Правый нижний угол */
+        background-position: 100% 100%; /* Левый верхний угол */
     }
 }
-
   
   
