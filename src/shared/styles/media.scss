@@ -1,3 +1,36 @@
-h1 {
-    margin: 0;
-}
+// SCSS breakpoints for responsive design
+
+// Small devices (mobile)
+@media (max-width: 576px) {
+    section {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 4vh;
+        margin: 0;
+    }
+    footer {
+        width: 100% !important;
+    }
+    .info-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center !important;
+    }
+  }
+  
+  // Medium devices (tablets)
+  @media (min-width: 577px) and (max-width: 768px) {
+    // Custom styles for tablets
+  }
+  
+  // Large devices (desktops)
+  @media (min-width: 769px) and (max-width: 992px) {
+    // Custom styles for small desktops or laptops
+  }
+  
+  // Extra large devices (large desktops)
+  @media (min-width: 993px) {
+    // Custom styles for large desktops
+  }
+  

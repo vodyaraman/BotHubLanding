@@ -1,1 +1,1 @@
-[https://bot-hub-landing.vercel.app/](Хост)
+[https://bot-hub-landing.vercel.app/]
