@@ -1,1 +1,1 @@
-export { default as NavPanel } from "./NavPanel.astro"
+export { NavPanel } from "./NavPanel"
