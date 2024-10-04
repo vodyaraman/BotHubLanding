@@ -9,3 +9,4 @@ export { default as UserIcon} from "./UserIcon";
 export { default as Grid} from "./Grid";
 export { default as SendButton} from "./SendButton";
 export { default as ArrowIcon} from "./ArrowIcon"
+export { default as DropDown} from "./DropDown"

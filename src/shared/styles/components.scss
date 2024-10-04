@@ -43,7 +43,13 @@
     &:hover {
         color: #4251db;
     }
+}
 
+.interceptor-line {
+    height: 40%;
+    margin: 10px;
+    margin-left: 20px;
+    border-right: 1px solid #5a689654;
 }
 
 .arrow-container {
@@ -52,21 +58,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 1s ease;
+    transition: 0.3 ease-in-out;
 
     &.rotate-up {
-        transform: rotate(180deg);
+        transform: rotateZ(180deg);
     }
 
     &.rotate-right {
-        transform: rotate(90deg);
+        transform: rotateZ(90deg);
     }
 
     &.rotate-down {
-        transform: rotate(0deg);
+        transform: rotateZ(0deg);
     }
 
     &.rotate-left {
-        transform: rotate(270deg);
+        transform: rotateZ(270deg);
     }
 }

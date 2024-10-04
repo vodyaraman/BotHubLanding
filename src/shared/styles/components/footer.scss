@@ -3,39 +3,41 @@
     justify-content: space-between;
     background-color: #1a253a;
     flex-wrap: wrap;
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     padding: 0 18vw;
+    width: 64%;
 
-    .footer-section {
-        flex: 1;
-        padding: 10px;
-
-        &.logo-section {
-            margin-right: 10vw;
-        }
-
-        h3 {
-            font-size: 1rem;
-            margin-bottom: 10px;
-            color: #575656;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-
-            li {
-                margin-bottom: 5px;
+    section {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .footer-section {
+            cursor: pointer;
+    
+            &.logo-section {
+                margin-right: 10vw;
             }
-        }
-
-        img {
-            margin-top: 10px;
-            width: 50px; /* Adjust size as needed */
-        }
-
-        p {
-            margin: 5px 0;
+    
+            h3 {
+                font-size: 0.7rem;
+                margin-bottom: 12px;
+                color: #575656;
+            }
+    
+            ul {
+                list-style: none;
+                padding: 0;
+    
+                li {
+                    margin-bottom: 5px;
+                }
+            }
+    
+            img {
+                margin-top: 10px;
+                width: 50px; /* Adjust size as needed */
+            }
         }
     }
 }

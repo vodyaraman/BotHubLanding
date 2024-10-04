@@ -1,4 +1,6 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 
 interface MessageProps {
   text: string;
@@ -6,10 +8,14 @@ interface MessageProps {
 }
 
 const Message: React.FC<MessageProps> = ({ text, messageType }) => {
-  console.log(messageType);
+
+  const formattedText = text.split('\n').join('  \n');
+
   return (
     <div className={`message message-${messageType}`}>
-      {text}
+      <ReactMarkdown remarkPlugins={[remarkGfm]}>
+        {formattedText}
+      </ReactMarkdown>
     </div>
   );
 };
