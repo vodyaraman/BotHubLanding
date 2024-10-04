@@ -2,6 +2,9 @@
 
 // Small devices (mobile)
 @media (max-width: 576px) {
+    header {
+        width: 100%;
+    }
     section {
         flex-direction: column;
         width: 100%;
@@ -10,12 +13,33 @@
     }
     footer {
         width: 100% !important;
+        
+        section {
+            padding-bottom: 20px;
+        }
     }
     .info-container {
         display: flex;
+        text-align: center !important;
+        &.left {
+            flex-direction: row;
+            text-align: center;
+        }
+
+        &.right {
+            flex-direction: row-reverse;
+            text-align: center;
+        }
+        .intro-text-container {
+            justify-content: center !important;
+            align-items: center !important;
+        }
+    }
+    .capabilities-grid {
+        flex-direction: column;
         justify-content: center;
         align-items: center;
-        text-align: center !important;
+        text-align: center;
     }
   }
   
